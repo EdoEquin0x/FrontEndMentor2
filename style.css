@@ -1,0 +1,98 @@
+html {
+  font-family: 'Outfit', sans-serif;
+  
+}
+
+
+body {
+  background: hsl(212, 45%, 89%);
+  display: grid;
+  grid-template-columns: 50fr 50fr 50fr;
+  grid-template-rows: 50fr 50fr 50fr;
+  grid-gap: 10px;
+  grid-template-areas:
+  ". . ."
+  ". content ."
+  ". . .";
+  
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  grid-area: content;
+}
+
+
+
+.wrapper {
+  background: hsl(0, 0%, 100%);
+  width: 100%;
+  height: 70%;
+  border-radius: 15px;
+  
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, .05);
+
+  
+  display: grid;
+  
+  grid-template-columns: 20fr 50fr 20fr;
+  grid-template-rows: 8fr 50fr 50fr 8fr;
+  grid-gap: 10px;
+  grid-template-areas:
+  ". . ."
+  ". image ."
+  ". text ."
+  ". . .";
+
+  
+
+  
+}
+
+
+
+
+
+.qrcode {
+  border-radius: 15px;
+  width: 250px;
+  height: 250px;
+  
+  
+}
+
+
+.qrcodewrapper {
+ 
+  height: 50%;
+  grid-area: image;
+  
+}
+
+.textitle {
+  color: hsl(0, 0%, 11%);
+  
+  text-align: center;
+  font-size: 1.2em;
+  text-decoration: bolder;
+}
+
+.textmain {
+  color: hsl(0, 0%, 23%);
+  font-size: 0.8em;
+  text-align: center;
+  text-decoration: bold;
+}
+
+.text {
+  
+  grid-area: text;
+  
+  height: 50%;
+  
+  
+}
+
+
+
